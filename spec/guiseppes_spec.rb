@@ -5,7 +5,6 @@ describe 'Guiseppes' do
   end
 
   it "should have no prices more than £10" do
-    # loop through the prices and do assertion to check its not more than 10
     @menu.get_all_prices_as_floats.each do |price|
       expect(price).to be <= 10
     end

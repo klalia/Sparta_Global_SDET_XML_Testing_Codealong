@@ -8,7 +8,6 @@ class Guiseppes
     @menu = Nokogiri::XML(File.open('./xml_menu.xml'))
   end
 
-  # get all prices as floas
   def get_all_prices_as_floats
     price_array = []
     @menu.xpath('//price').each do |price|
